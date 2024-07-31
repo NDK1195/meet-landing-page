@@ -13,13 +13,175 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Meet landing page</title>
   </head>
-  <body>
-    Meet makes it easy to connect with others face-to-face virtually and
-    collaborate across any device. Download v1.3 What is it? 01 Built for modern
-    use Smarter meetings, all in one place Send messages, share files, show your
-    screen, and record your meetings — all in one workspace. Control who can
-    join with invite-only team access, data encryption, and data export. 02
-    Experience more together Stay connected with reliable HD meetings and
-    unlimited one-on-one and group video sessions. Download v1.3
+  <body class="flex flex-col bg-FAFAFA">
+    <header
+      class="mt-12 overflow-hidden pb-[148px] md:pb-[164px] xl:mt-20 xl:pb-[201px]"
+    >
+      <h1
+        class="mb-[54px] flex items-center justify-center md:mb-16 xl:mb-[108px]"
+      >
+        <img src="./assets/logo.svg" alt="logo" />
+      </h1>
+
+      <div
+        class="relative flex flex-col items-center justify-center gap-12 md:gap-[72px] xl:flex-row"
+        id="desktop-hero"
+      >
+        <img
+          src="./assets/desktop/image-hero-left.png"
+          alt="image hero"
+          class="absolute -left-8 -top-11 hidden xl:block"
+        />
+        <img
+          src="./assets/desktop/image-hero-right.png"
+          alt="image hero"
+          class="absolute -right-8 top-0 hidden xl:block"
+        />
+        <!-- desktop hero image -->
+
+        <img
+          src="./assets/tablet/image-hero.png"
+          alt="image hero"
+          class="min-w-[415px] md:min-w-[820px] xl:hidden"
+        />
+        <!-- tablet & mobile hero image -->
+
+        <div class="flex flex-col items-center px-6 text-center md:px-0">
+          <h2
+            class="xl:leading-[64px mb-6 text-[40px] font-black leading-[44px] text-28283D md:text-5xl md:leading-[48px] xl:mb-[34px] xl:max-w-[445px] xl:text-[64px]"
+          >
+            Group Chat for Everyone
+          </h2>
+          <p
+            class="mb-8 text-base font-medium leading-[26px] text-87879D xl:max-w-[540px] xl:text-lg"
+          >
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div
+            class="flex flex-col items-center justify-center gap-4 text-white md:flex-row"
+          >
+            <a
+              href="#"
+              class="rounded-[29px] bg-4D96A9 px-10 py-4 text-base font-black leading-[26px] transition-colors hover:bg-[#71c0d4]"
+              >Download <span class="pl-1 text-8FE3F9">v1.3</span>
+            </a>
+            <a
+              href="#"
+              class="rounded-[29px] bg-855FB1 px-[29px] py-4 text-base font-black leading-[26px] transition-colors hover:bg-[#b18bdd]"
+              >What is it?</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Dekstop hero -->
+      <!-- Tablet & Mobile hero -->
+    </header>
+
+    <div
+      class="border-[rgba(135, 135, 157, 0.25)] relative mx-auto mb-16 flex size-14 items-center justify-center rounded-[29px] border text-base font-black leading-[26px] text-87879D"
+    >
+      <div
+        class="absolute -top-[42px] z-10 h-[1px] w-[84px] rotate-90 bg-87879D opacity-25"
+      ></div>
+      01
+    </div>
+
+    <main class="px-6">
+      <div
+        class="mb-16 grid grid-cols-2 gap-6 md:mx-12 md:grid-cols-4 md:gap-x-3 md:gap-y-0 xl:mb-20 xl:gap-x-8"
+      >
+        <img
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="image woman in video call"
+          class="rounded-xl"
+        />
+        <img
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="image woman video chatting"
+          class="rounded-xl"
+        />
+        <img
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="image men in meeting"
+          class="rounded-xl"
+        />
+        <img
+          src="./assets/desktop/image-man-texting.jpg"
+          alt="image men texting"
+          class="rounded-xl"
+        />
+      </div>
+
+      <div
+        class="mx-auto mb-[176px] min-w-[327px] max-w-[540px] text-center md:mb-[192px] md:max-w-[573px] xl:mb-[184px]"
+      >
+        <h4
+          class="mb-6 text-base font-black uppercase leading-[26px] tracking-[4px] text-4D96A9 md:mb-4"
+        >
+          Built for modern use
+        </h4>
+        <h3
+          class="mb-8 text-[32px] font-black leading-9 text-28283D md:px-16 md:text-[40px] md:leading-[44px] xl:px-12"
+        >
+          Smarter meetings, all in one place
+        </h3>
+        <p class="text-base font-medium leading-[26px] text-87879D xl:text-lg">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
+    </main>
+
+    <div
+      class="border-[rgba(135, 135, 157, 0.25)] relative -bottom-[28px] z-10 mx-auto flex size-14 items-center justify-center rounded-[29px] border bg-FAFAFA text-base font-black leading-[26px] text-87879D"
+    >
+      <div
+        class="absolute -top-[42px] h-[1px] w-[84px] rotate-90 bg-87879D opacity-25"
+      ></div>
+      01
+    </div>
+
+    <footer class="relative mt-auto bg-4D96A9">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="./assets/desktop/image-footer.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/tablet/image-footer.jpg"
+        />
+        <img
+          src="./assets/mobile/image-footer.jpg"
+          alt="image footer"
+          class="w-full object-cover opacity-[0.1045]"
+        />
+      </picture>
+
+      <div class="absolute left-0 top-0 h-full w-full">
+        <div
+          class="flex h-full flex-col items-center justify-center px-6 text-center text-FAFAFA md:px-[97px] xl:mx-auto xl:max-w-[1110px] xl:flex-row xl:justify-between xl:px-0 xl:text-left"
+        >
+          <h3
+            class="mb-6 text-[32px] font-black leading-9 md:mb-8 md:px-10 md:text-[40px] md:leading-[44px] xl:mb-0 xl:max-w-[350px] xl:px-0"
+          >
+            Experience more together
+          </h3>
+          <p
+            class="mb-8 text-lg font-medium leading-[26px] md:mb-10 xl:mb-0 xl:max-w-[350px]"
+          >
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <a
+            href="#"
+            class="rounded-[29px] bg-855FB1 px-10 py-4 text-base font-black leading-[26px] text-white transition-colors hover:bg-[#b18bdd]"
+            >Download <span class="pl-1 text-D9B8FF">v1.3</span></a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

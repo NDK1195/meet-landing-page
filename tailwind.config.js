@@ -12,6 +12,9 @@ module.exports = {
         D9B8FF: "#D9B8FF",
         FAFAFA: "#FAFAFA",
       },
+      backgroundImage: {
+        "mobile-footer": 'url("../assets/mobile/image-footer.jpg")',
+      },
     },
   },
   plugins: [],
